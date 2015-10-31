@@ -12,6 +12,7 @@
 		01729E3C1BE31B25005AD489 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 01729E3A1BE31B25005AD489 /* Main.storyboard */; };
 		01729E3E1BE31B25005AD489 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 01729E3D1BE31B25005AD489 /* Assets.xcassets */; };
 		01729E411BE31B25005AD489 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 01729E3F1BE31B25005AD489 /* LaunchScreen.storyboard */; };
+		01DADBD11BE55A580028B203 /* README.md in Sources */ = {isa = PBXBuildFile; fileRef = 01DADBD01BE55A580028B203 /* README.md */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -22,6 +23,7 @@
 		01729E3D1BE31B25005AD489 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		01729E401BE31B25005AD489 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		01729E421BE31B25005AD489 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		01DADBD01BE55A580028B203 /* README.md */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = net.daringfireball.markdown; path = README.md; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -38,6 +40,7 @@
 		01729E2A1BE31B25005AD489 = {
 			isa = PBXGroup;
 			children = (
+				01DADBD01BE55A580028B203 /* README.md */,
 				01729E351BE31B25005AD489 /* DropboxSG */,
 				01729E341BE31B25005AD489 /* Products */,
 			);
@@ -135,6 +138,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				01DADBD11BE55A580028B203 /* README.md in Sources */,
 				01729E391BE31B25005AD489 /* ViewController.swift in Sources */,
 				01729E371BE31B25005AD489 /* AppDelegate.swift in Sources */,
 			);
@@ -284,6 +288,7 @@
 				01729E471BE31B25005AD489 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};

@@ -172,6 +172,7 @@
         <scene sceneID="Mo3-qe-NqQ">
             <objects>
                 <navigationController navigationBarHidden="YES" id="gdm-dr-uso" sceneMemberID="viewController">
+                    <navigationItem key="navigationItem" id="v82-81-ymE"/>
                     <navigationBar key="navigationBar" contentMode="scaleToFill" id="5Pw-Np-sOP">
                         <rect key="frame" x="0.0" y="0.0" width="320" height="44"/>
                         <autoresizingMask key="autoresizingMask"/>

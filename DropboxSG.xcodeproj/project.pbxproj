@@ -8,22 +8,24 @@
 
 /* Begin PBXBuildFile section */
 		01729E371BE31B25005AD489 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 01729E361BE31B25005AD489 /* AppDelegate.swift */; };
-		01729E391BE31B25005AD489 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 01729E381BE31B25005AD489 /* ViewController.swift */; };
 		01729E3C1BE31B25005AD489 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 01729E3A1BE31B25005AD489 /* Main.storyboard */; };
 		01729E3E1BE31B25005AD489 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 01729E3D1BE31B25005AD489 /* Assets.xcassets */; };
 		01729E411BE31B25005AD489 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 01729E3F1BE31B25005AD489 /* LaunchScreen.storyboard */; };
 		01DADBD11BE55A580028B203 /* README.md in Sources */ = {isa = PBXBuildFile; fileRef = 01DADBD01BE55A580028B203 /* README.md */; };
+		01DADBD41BE6DAEB0028B203 /* CreateAccountRootViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 01DADBD31BE6DAEB0028B203 /* CreateAccountRootViewController.swift */; };
+		01DADBD81BE6DD930028B203 /* CreateAccountViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 01DADBD71BE6DD930028B203 /* CreateAccountViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
 		01729E331BE31B25005AD489 /* DropboxSG.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = DropboxSG.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		01729E361BE31B25005AD489 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		01729E381BE31B25005AD489 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
 		01729E3B1BE31B25005AD489 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		01729E3D1BE31B25005AD489 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		01729E401BE31B25005AD489 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		01729E421BE31B25005AD489 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		01DADBD01BE55A580028B203 /* README.md */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = net.daringfireball.markdown; path = README.md; sourceTree = "<group>"; };
+		01DADBD31BE6DAEB0028B203 /* CreateAccountRootViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CreateAccountRootViewController.swift; sourceTree = "<group>"; };
+		01DADBD71BE6DD930028B203 /* CreateAccountViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CreateAccountViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -57,14 +59,23 @@
 		01729E351BE31B25005AD489 /* DropboxSG */ = {
 			isa = PBXGroup;
 			children = (
+				01DADBD21BE6DAAB0028B203 /* View Controllers */,
 				01729E361BE31B25005AD489 /* AppDelegate.swift */,
-				01729E381BE31B25005AD489 /* ViewController.swift */,
 				01729E3A1BE31B25005AD489 /* Main.storyboard */,
 				01729E3D1BE31B25005AD489 /* Assets.xcassets */,
 				01729E3F1BE31B25005AD489 /* LaunchScreen.storyboard */,
 				01729E421BE31B25005AD489 /* Info.plist */,
 			);
 			path = DropboxSG;
+			sourceTree = "<group>";
+		};
+		01DADBD21BE6DAAB0028B203 /* View Controllers */ = {
+			isa = PBXGroup;
+			children = (
+				01DADBD71BE6DD930028B203 /* CreateAccountViewController.swift */,
+				01DADBD31BE6DAEB0028B203 /* CreateAccountRootViewController.swift */,
+			);
+			name = "View Controllers";
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -138,8 +149,9 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				01DADBD81BE6DD930028B203 /* CreateAccountViewController.swift in Sources */,
+				01DADBD41BE6DAEB0028B203 /* CreateAccountRootViewController.swift in Sources */,
 				01DADBD11BE55A580028B203 /* README.md in Sources */,
-				01729E391BE31B25005AD489 /* ViewController.swift in Sources */,
 				01729E371BE31B25005AD489 /* AppDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

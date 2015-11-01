@@ -8,7 +8,7 @@
         <!--View Controller-->
         <scene sceneID="tne-QT-ifu">
             <objects>
-                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="DropboxSG" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController id="BYZ-38-t0r" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
                         <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -118,10 +118,10 @@
             </objects>
             <point key="canvasLocation" x="1448" y="436"/>
         </scene>
-        <!--View Controller-->
+        <!--Create Account Root View Controller-->
         <scene sceneID="Vl5-3Z-zSb">
             <objects>
-                <viewController id="KdV-qT-zJU" sceneMemberID="viewController">
+                <viewController id="KdV-qT-zJU" customClass="CreateAccountRootViewController" customModule="DropboxSG" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="Qd6-69-cxt">
                         <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -133,23 +133,23 @@
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" id="O3K-dm-k9S">
                                 <rect key="frame" x="10" y="475" width="310" height="30"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <connections>
-                                    <segue destination="oAo-8Y-mIG" kind="push" identifier="CreateAccount" id="YTp-6z-K6f"/>
-                                </connections>
                             </button>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                     </view>
                     <navigationItem key="navigationItem" id="HHr-5J-WtN"/>
+                    <connections>
+                        <segue destination="oAo-8Y-mIG" kind="modal" identifier="createAccountSegue" id="eJz-9P-aas"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="q3M-Ln-Fr1" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="1846" y="436"/>
         </scene>
-        <!--Create Account Root View Controller-->
+        <!--Create Account View Controller-->
         <scene sceneID="VXG-fa-sFS">
             <objects>
-                <viewController id="oAo-8Y-mIG" customClass="CreateAccountRootViewController" sceneMemberID="viewController">
+                <viewController id="oAo-8Y-mIG" customClass="CreateAccountViewController" customModule="DropboxSG" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="JPC-aT-Fsa">
                         <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -217,10 +217,10 @@
             </objects>
             <point key="canvasLocation" x="1846" y="1181"/>
         </scene>
-        <!--Sign In Root View Controller-->
+        <!--View Controller-->
         <scene sceneID="etc-ue-wX4">
             <objects>
-                <viewController id="ONQ-0i-1fw" customClass="SignInRootViewController" sceneMemberID="viewController">
+                <viewController id="ONQ-0i-1fw" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="Oow-N3-Sqw">
                         <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>

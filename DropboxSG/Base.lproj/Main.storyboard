@@ -146,10 +146,10 @@
             </objects>
             <point key="canvasLocation" x="1846" y="440"/>
         </scene>
-        <!--View Controller-->
+        <!--Create Account Root View Controller-->
         <scene sceneID="VXG-fa-sFS">
             <objects>
-                <viewController id="oAo-8Y-mIG" sceneMemberID="viewController">
+                <viewController id="oAo-8Y-mIG" customClass="CreateAccountRootViewController" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="JPC-aT-Fsa">
                         <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -213,10 +213,10 @@
             </objects>
             <point key="canvasLocation" x="1846" y="1181"/>
         </scene>
-        <!--View Controller-->
+        <!--Sign In Root View Controller-->
         <scene sceneID="etc-ue-wX4">
             <objects>
-                <viewController id="ONQ-0i-1fw" sceneMemberID="viewController">
+                <viewController id="ONQ-0i-1fw" customClass="SignInRootViewController" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="Oow-N3-Sqw">
                         <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>

@@ -14,6 +14,8 @@
 		01DADBD11BE55A580028B203 /* README.md in Sources */ = {isa = PBXBuildFile; fileRef = 01DADBD01BE55A580028B203 /* README.md */; };
 		01DADBD41BE6DAEB0028B203 /* CreateAccountRootViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 01DADBD31BE6DAEB0028B203 /* CreateAccountRootViewController.swift */; };
 		01DADBD81BE6DD930028B203 /* CreateAccountViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 01DADBD71BE6DD930028B203 /* CreateAccountViewController.swift */; };
+		01DADBDA1BE6E0E90028B203 /* SignInRootViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 01DADBD91BE6E0E90028B203 /* SignInRootViewController.swift */; };
+		01DADBDC1BE6E12B0028B203 /* SignInViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 01DADBDB1BE6E12B0028B203 /* SignInViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -26,6 +28,8 @@
 		01DADBD01BE55A580028B203 /* README.md */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = net.daringfireball.markdown; path = README.md; sourceTree = "<group>"; };
 		01DADBD31BE6DAEB0028B203 /* CreateAccountRootViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CreateAccountRootViewController.swift; sourceTree = "<group>"; };
 		01DADBD71BE6DD930028B203 /* CreateAccountViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CreateAccountViewController.swift; sourceTree = "<group>"; };
+		01DADBD91BE6E0E90028B203 /* SignInRootViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SignInRootViewController.swift; sourceTree = "<group>"; };
+		01DADBDB1BE6E12B0028B203 /* SignInViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SignInViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -72,6 +76,8 @@
 		01DADBD21BE6DAAB0028B203 /* View Controllers */ = {
 			isa = PBXGroup;
 			children = (
+				01DADBDB1BE6E12B0028B203 /* SignInViewController.swift */,
+				01DADBD91BE6E0E90028B203 /* SignInRootViewController.swift */,
 				01DADBD71BE6DD930028B203 /* CreateAccountViewController.swift */,
 				01DADBD31BE6DAEB0028B203 /* CreateAccountRootViewController.swift */,
 			);
@@ -149,7 +155,9 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				01DADBDA1BE6E0E90028B203 /* SignInRootViewController.swift in Sources */,
 				01DADBD81BE6DD930028B203 /* CreateAccountViewController.swift in Sources */,
+				01DADBDC1BE6E12B0028B203 /* SignInViewController.swift in Sources */,
 				01DADBD41BE6DAEB0028B203 /* CreateAccountRootViewController.swift in Sources */,
 				01DADBD11BE55A580028B203 /* README.md in Sources */,
 				01729E371BE31B25005AD489 /* AppDelegate.swift in Sources */,

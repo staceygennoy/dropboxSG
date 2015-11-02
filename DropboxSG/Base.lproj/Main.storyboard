@@ -189,10 +189,10 @@
             </objects>
             <point key="canvasLocation" x="1439" y="1181"/>
         </scene>
-        <!--View Controller-->
+        <!--Sign In Root View Controller-->
         <scene sceneID="SF4-wG-L8l">
             <objects>
-                <viewController id="5Cf-aF-EAc" sceneMemberID="viewController">
+                <viewController id="5Cf-aF-EAc" customClass="SignInRootViewController" customModule="DropboxSG" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="Jfk-KI-Kkg">
                         <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -205,7 +205,7 @@
                                 <rect key="frame" x="10" y="432" width="303" height="30"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <connections>
-                                    <segue destination="ONQ-0i-1fw" kind="modal" id="vyy-hi-OZG"/>
+                                    <segue destination="ONQ-0i-1fw" kind="modal" identifier="signInSegue" id="vyy-hi-OZG"/>
                                 </connections>
                             </button>
                         </subviews>
@@ -217,10 +217,10 @@
             </objects>
             <point key="canvasLocation" x="1846" y="1181"/>
         </scene>
-        <!--View Controller-->
+        <!--Sign In View Controller-->
         <scene sceneID="etc-ue-wX4">
             <objects>
-                <viewController id="ONQ-0i-1fw" sceneMemberID="viewController">
+                <viewController id="ONQ-0i-1fw" customClass="SignInViewController" customModule="DropboxSG" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="Oow-N3-Sqw">
                         <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>

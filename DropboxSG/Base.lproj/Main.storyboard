@@ -130,16 +130,27 @@
                                 <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                             </imageView>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" id="KXn-gn-wIX">
+                                <rect key="frame" x="10" y="434" width="301" height="30"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <connections>
+                                    <action selector="signInButton:" destination="KdV-qT-zJU" eventType="touchUpInside" id="SXJ-xF-uaZ"/>
+                                </connections>
+                            </button>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" id="O3K-dm-k9S">
                                 <rect key="frame" x="10" y="475" width="310" height="30"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <connections>
+                                    <action selector="createAccountButton:" destination="KdV-qT-zJU" eventType="touchUpInside" id="7D2-SK-Qkd"/>
+                                </connections>
                             </button>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                     </view>
                     <navigationItem key="navigationItem" id="HHr-5J-WtN"/>
                     <connections>
-                        <segue destination="oAo-8Y-mIG" kind="modal" identifier="createAccountSegue" id="eJz-9P-aas"/>
+                        <segue destination="oAo-8Y-mIG" kind="push" identifier="createAccountSegue" id="eJz-9P-aas"/>
+                        <segue destination="ONQ-0i-1fw" kind="push" identifier="createAccountSignInSegue" id="yjb-RL-TGC"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="q3M-Ln-Fr1" userLabel="First Responder" sceneMemberID="firstResponder"/>
@@ -161,6 +172,9 @@
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" id="6TZ-Zb-q84">
                                 <rect key="frame" x="8" y="27" width="92" height="30"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <connections>
+                                    <action selector="welcomeButton:" destination="oAo-8Y-mIG" eventType="touchUpInside" id="oAx-4w-mYa"/>
+                                </connections>
                             </button>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
@@ -205,17 +219,28 @@
                                 <rect key="frame" x="10" y="432" width="303" height="30"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <connections>
-                                    <segue destination="ONQ-0i-1fw" kind="modal" identifier="signInSegue" id="vyy-hi-OZG"/>
+                                    <action selector="signInButton:" destination="5Cf-aF-EAc" eventType="touchUpInside" id="5mi-g9-GzJ"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" id="y4t-M3-xR0">
+                                <rect key="frame" x="9" y="470" width="303" height="30"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <connections>
+                                    <action selector="createAccountButton:" destination="5Cf-aF-EAc" eventType="touchUpInside" id="c0I-Pe-Mxd"/>
                                 </connections>
                             </button>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                     </view>
                     <navigationItem key="navigationItem" id="sSZ-Y4-Ovu"/>
+                    <connections>
+                        <segue destination="oAo-8Y-mIG" kind="push" identifier="signInCreateAccountSegue" id="qpb-dO-rlZ"/>
+                        <segue destination="ONQ-0i-1fw" kind="push" identifier="signInSegue" id="f6n-gW-3jd"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="mWR-TF-YIg" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1846" y="1181"/>
+            <point key="canvasLocation" x="1837" y="1181"/>
         </scene>
         <!--Sign In View Controller-->
         <scene sceneID="etc-ue-wX4">
@@ -232,6 +257,9 @@
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" id="Oaf-C2-2e5">
                                 <rect key="frame" x="6" y="27" width="100" height="30"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <connections>
+                                    <action selector="welcomeButton:" destination="ONQ-0i-1fw" eventType="touchUpInside" id="Zhd-Ew-duj"/>
+                                </connections>
                             </button>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
@@ -252,4 +280,8 @@
         <image name="welcome2" width="320" height="568"/>
         <image name="welcome3" width="320" height="568"/>
     </resources>
+    <inferredMetricsTieBreakers>
+        <segue reference="f6n-gW-3jd"/>
+        <segue reference="eJz-9P-aas"/>
+    </inferredMetricsTieBreakers>
 </document>

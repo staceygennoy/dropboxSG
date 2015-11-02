@@ -22,6 +22,9 @@ class CreateAccountViewController: UIViewController {
     }
     
 
+    @IBAction func welcomeButton(sender: AnyObject) {
+        navigationController!.popViewControllerAnimated(true)
+    }
     /*
     // MARK: - Navigation
 

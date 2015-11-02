@@ -24,7 +24,13 @@ class CreateAccountRootViewController: UIViewController {
         // Dispose of any resources that can be recreated.
     }
     
+    @IBAction func signInButton(sender: AnyObject) {
+        performSegueWithIdentifier("createAccountSignInSegue", sender: self)
+    }
 
+    @IBAction func createAccountButton(sender: AnyObject) {
+         performSegueWithIdentifier("createAccountSegue", sender: self)
+    }
     /*
     // MARK: - Navigation
 

@@ -437,7 +437,7 @@
                                 <autoresizingMask key="autoresizingMask"/>
                             </imageView>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" id="tok-lr-et8">
-                                <rect key="frame" x="0.0" y="210" width="320" height="52"/>
+                                <rect key="frame" x="237" y="20" width="83" height="47"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <connections>
                                     <segue destination="UzY-Qw-Y12" kind="modal" id="ZeQ-y8-1mV"/>

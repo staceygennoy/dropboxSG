@@ -501,6 +501,13 @@
                                     <segue destination="AoY-k0-lOe" kind="modal" modalTransitionStyle="flipHorizontal" id="yrX-mB-IfB"/>
                                 </connections>
                             </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" id="xvf-7a-V6L">
+                                <rect key="frame" x="117" y="472" width="88" height="38"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <connections>
+                                    <segue destination="RmV-PU-FR9" kind="modal" id="Qkk-CU-htu"/>
+                                </connections>
+                            </button>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                     </view>
@@ -509,7 +516,7 @@
             </objects>
             <point key="canvasLocation" x="4697" y="94"/>
         </scene>
-        <!--View Controller-->
+        <!--Files-->
         <scene sceneID="bIK-dF-z6s">
             <objects>
                 <viewController id="Wae-o0-hwJ" sceneMemberID="viewController">
@@ -524,34 +531,46 @@
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                     </view>
-                    <navigationItem key="navigationItem" id="IK1-UT-Xbo"/>
+                    <navigationItem key="navigationItem" title="Files" id="IK1-UT-Xbo"/>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="4jf-5h-9ZK" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="4713" y="2641"/>
         </scene>
-        <!--View Controller-->
+        <!--Settings-->
         <scene sceneID="HWa-8D-4kC">
             <objects>
-                <viewController id="jrw-hs-5ri" sceneMemberID="viewController">
+                <viewController id="jrw-hs-5ri" customClass="SettingsViewController" customModule="DropboxSG" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="WWc-X4-5qs">
                         <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <scrollView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" id="on9-hB-i6m">
-                                <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
+                                <rect key="frame" x="0.0" y="-32" width="320" height="571"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <subviews>
                                     <imageView opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" image="settings" id="QY8-Qe-8GN">
-                                        <rect key="frame" x="0.0" y="64" width="320" height="772"/>
+                                        <rect key="frame" x="0.0" y="0.0" width="320" height="836"/>
                                         <autoresizingMask key="autoresizingMask"/>
                                     </imageView>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" id="iZ2-Sm-RF5">
+                                        <rect key="frame" x="0.0" y="434" width="320" height="116"/>
+                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                        <connections>
+                                            <segue destination="gdm-dr-uso" kind="modal" id="WZZ-kT-2gf"/>
+                                        </connections>
+                                    </button>
                                 </subviews>
                             </scrollView>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                     </view>
-                    <navigationItem key="navigationItem" id="lXu-dw-jWu"/>
+                    <navigationItem key="navigationItem" title="Settings" id="lXu-dw-jWu"/>
+                    <connections>
+                        <outlet property="button" destination="iZ2-Sm-RF5" id="he0-Zm-qoG"/>
+                        <outlet property="imageView" destination="QY8-Qe-8GN" id="J8z-g2-Eda"/>
+                        <outlet property="scrollView" destination="on9-hB-i6m" id="tpr-pc-nMf"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Pgq-21-lCn" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
@@ -592,7 +611,7 @@
                 </tabBarController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="cMy-y9-7nT" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="3635" y="1181"/>
+            <point key="canvasLocation" x="4317" y="961"/>
         </scene>
         <!--Settings-->
         <scene sceneID="mWy-VS-jkR">
@@ -655,7 +674,9 @@
     </resources>
     <inferredMetricsTieBreakers>
         <segue reference="f6n-gW-3jd"/>
-        <segue reference="eJz-9P-aas"/>
+        <segue reference="WZZ-kT-2gf"/>
+        <segue reference="Qkk-CU-htu"/>
         <segue reference="g74-YD-heR"/>
+        <segue reference="qpb-dO-rlZ"/>
     </inferredMetricsTieBreakers>
 </document>

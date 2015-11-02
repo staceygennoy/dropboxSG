@@ -553,21 +553,24 @@
                                         <rect key="frame" x="0.0" y="0.0" width="320" height="836"/>
                                         <autoresizingMask key="autoresizingMask"/>
                                     </imageView>
-                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" id="iZ2-Sm-RF5">
-                                        <rect key="frame" x="0.0" y="434" width="320" height="116"/>
-                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                        <connections>
-                                            <segue destination="gdm-dr-uso" kind="modal" id="WZZ-kT-2gf"/>
-                                        </connections>
-                                    </button>
                                 </subviews>
                             </scrollView>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                     </view>
-                    <navigationItem key="navigationItem" title="Settings" id="lXu-dw-jWu"/>
+                    <navigationItem key="navigationItem" title="Settings" id="lXu-dw-jWu">
+                        <barButtonItem key="rightBarButtonItem" style="plain" id="DLZ-cg-hUU">
+                            <button key="customView" opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" id="5gm-r5-ljz">
+                                <rect key="frame" x="244" y="7" width="60" height="30"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" title="Sign Out"/>
+                                <connections>
+                                    <segue destination="gdm-dr-uso" kind="modal" id="cE0-BP-6gM"/>
+                                </connections>
+                            </button>
+                        </barButtonItem>
+                    </navigationItem>
                     <connections>
-                        <outlet property="button" destination="iZ2-Sm-RF5" id="he0-Zm-qoG"/>
                         <outlet property="imageView" destination="QY8-Qe-8GN" id="J8z-g2-Eda"/>
                         <outlet property="scrollView" destination="on9-hB-i6m" id="tpr-pc-nMf"/>
                     </connections>
@@ -674,7 +677,7 @@
     </resources>
     <inferredMetricsTieBreakers>
         <segue reference="f6n-gW-3jd"/>
-        <segue reference="WZZ-kT-2gf"/>
+        <segue reference="cE0-BP-6gM"/>
         <segue reference="Qkk-CU-htu"/>
         <segue reference="g74-YD-heR"/>
         <segue reference="qpb-dO-rlZ"/>
